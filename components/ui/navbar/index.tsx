@@ -1,6 +1,6 @@
-import Blocks from '../../../islands/blocks.tsx'
+import Blocks from '../../misc/blocks.tsx'
 import Dropdown from '../../../islands/dropdown.tsx'
-import Notification from '../../../islands/notification.tsx'
+import Notification from '../../misc/notification.tsx'
 import { Input } from '../forms/input.tsx'
 
 export const Navbar = () => {
