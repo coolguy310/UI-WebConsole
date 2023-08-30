@@ -15,7 +15,7 @@ import {
   VerificationFlow,
 } from "../packages/kratos-cdk/index.ts"
 import { Messages } from "./flow-message.tsx"
-import OryNode from "./ory-node.tsx"
+import OryNode from "../components/misc/ory-node.tsx"
 
 export type Methods = "oidc" | "password" | "profile" | "totp" | "webauthn" | "link" | "lookup_secret"
 
