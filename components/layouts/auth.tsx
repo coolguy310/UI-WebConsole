@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts"
 
-import Copyright from "../../islands/copyright.tsx"
+import Copyright from "../misc/copyright.tsx"
 import { Button } from "../ui/button/index.tsx"
 import { Footer } from "../ui/footer/index.tsx"
 
