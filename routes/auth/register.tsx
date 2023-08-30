@@ -1,9 +1,9 @@
 import { Handlers } from "$fresh/server.ts"
 
-import { SittingWomanIlustration } from "../../components/icons/index.ts"
-import SittingManIlustration from "../../components/icons/sitting-man.tsx"
-import { AuthLayout } from "../../components/layouts/auth.tsx"
-import AuthRegisterForm from "../../islands/form-auth-register.tsx"
+import { SittingWomanIlustration } from "@/components/icons/index.ts"
+import SittingManIlustration from "@/components/icons/sitting-man.tsx"
+import { AuthLayout } from "@/components/layouts/auth.tsx"
+import AuthRegisterForm from "@/islands/form-auth-register.tsx"
 
 // import { Kratos } from "../../packages/kratos-auth/auth.ts"
 
