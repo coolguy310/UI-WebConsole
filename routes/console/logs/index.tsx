@@ -1,7 +1,7 @@
 import { PageProps } from "$fresh/src/server/types.ts"
 
 import { ConsoleLayout } from "../../../components/layouts/console.tsx"
-import LogsViewTable from "../../../islands/table-logs-view.tsx"
+import LogsViewTable from "../../../components/misc/table-logs-view.tsx"
 
 export default function SecretsPage(props: PageProps) {
   return (
