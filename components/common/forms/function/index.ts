@@ -1,0 +1,6 @@
+export { FunctionBlocksForm } from "./blocks.tsx"
+export { FunctionDetailForm } from "./detail.tsx"
+export { FunctionRoutesForm } from "./routes.tsx"
+export { FunctionDeploymentForm } from "./deployment.tsx"
+export { FunctionScalingForm } from "./scaling.tsx"
+export { FunctionCostForm } from "./cost.tsx"

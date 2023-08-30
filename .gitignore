@@ -1,0 +1,6 @@
+node_modules
+.env.local
+.env.development.local
+.env
+Deno.env
+_fresh

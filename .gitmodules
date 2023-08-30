@@ -1,0 +1,4 @@
+[submodule "packages/kratos-cdk"]
+	path = packages/kratos-cdk
+	url = https://github.com/qernal/openapi-kratos-typescript-client.git
+	branch = fix/with_credentials
