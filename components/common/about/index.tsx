@@ -1,4 +1,4 @@
-import { Star } from "../../icons/misc.tsx"
+import { Star } from "@/components/icons/misc.tsx"
 
 const About = () => {
   const list = [

@@ -1,6 +1,6 @@
-import { Button } from "../../../ui/button/index.tsx"
-import { InputFile } from "../../../ui/forms/input-file.tsx"
-import { Input } from "../../../ui/forms/input.tsx"
+import { Button } from "@/components/ui/button/index.tsx"
+import { InputFile } from "@/components/ui/forms/input-file.tsx"
+import { Input } from "@/components/ui/forms/input.tsx"
 
 export const AuthCreateOrganizationForm = () => {
   return (
