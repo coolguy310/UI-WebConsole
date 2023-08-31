@@ -24,6 +24,7 @@ interface InputProps extends NodeInputProps {
   theme?: "dark" | "light"
   placeholder?: string
   className?: string
+  isLoading?: boolean
 }
 
 const Icons = {
@@ -44,6 +45,7 @@ export const Input = (props: InputProps) => {
     disabled,
     value,
     node,
+    isLoading,
     ...rest
   } = props
 
@@ -53,13 +55,13 @@ export const Input = (props: InputProps) => {
     let styles = {
       textColor: "text-stroke",
       hintColor: "text-stroke",
-      background: "bg-dark focus:shadow-input",
+      background: "bg-dark focus:shadow-input autofill:bg-none autofill:bg-dark",
     }
     if (theme === "light") {
       styles = {
         textColor: "text-light",
         hintColor: "text-white",
-        background: "bg-secondary-light",
+        background: "bg-secondary-light autofill:bg-none autofill:bg-secondary-light",
       }
     }
     return styles
@@ -83,6 +85,7 @@ export const Input = (props: InputProps) => {
           name={attributes.name}
           value={attributes.value || ""}
           disabled={attributes.disabled || disabled}
+          isLoading={isLoading}
         />
       )
     case "submit":
@@ -94,6 +97,7 @@ export const Input = (props: InputProps) => {
           name={attributes.name}
           value={attributes.value || ""}
           disabled={attributes.disabled || disabled}
+          isLoading={isLoading}
         />
       )
   }
@@ -110,7 +114,7 @@ export const Input = (props: InputProps) => {
         </>
       )}
       <div className="relative group text-placeholder focus-within:text-secondary transition-all">
-        {InputIcon && <InputIcon className="absolute lg:left-7 top-1/2 transform -translate-1/2 text-xl" />}
+        {InputIcon && <InputIcon className="absolute lg:left-4 top-3 text-xl" />}
         <input
           type={attributes?.type}
           name={attributes?.name}
