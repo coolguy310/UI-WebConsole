@@ -1,5 +1,5 @@
-import { Table } from "../components/ui/table/index.tsx"
-import { Wrapper, WrapperProps } from "../components/ui/wrapper/index.tsx"
+import { Table } from "../ui/table/index.tsx"
+import { Wrapper, WrapperProps } from "../ui/wrapper/index.tsx"
 
 type FunctionsTableProps = WrapperProps
 const FunctionsTable = (props: FunctionsTableProps) => {

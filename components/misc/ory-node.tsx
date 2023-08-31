@@ -1,6 +1,6 @@
-import { Input } from "../components/ui/forms/input.tsx"
-import { FormDispatcher, ValueSetter } from "../lib/ory-helpers.ts"
-import { UiNode, UiNodeAttributes } from "../packages/kratos-cdk/index.ts"
+import { Input } from "../ui/forms/input.tsx"
+import { FormDispatcher, ValueSetter } from "../../lib/ory-helpers.ts"
+import { UiNode, UiNodeAttributes } from "../../packages/kratos-cdk/index.ts"
 
 interface Props {
   node: UiNode

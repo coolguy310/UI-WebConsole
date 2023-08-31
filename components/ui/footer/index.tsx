@@ -1,4 +1,4 @@
-import Copyright from "../../../islands/copyright.tsx"
+import Copyright from "../../misc/copyright.tsx"
 import { cn } from "../../../lib/utils.ts"
 
 const menu = [

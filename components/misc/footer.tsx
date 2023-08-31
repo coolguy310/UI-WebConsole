@@ -1,4 +1,4 @@
-import { EnvelopeIcon, MobilePhoneIcon } from "../components/icons/index.ts"
+import { EnvelopeIcon, MobilePhoneIcon } from "../icons/index.ts"
 
 const Footer = () => {
   const List = [

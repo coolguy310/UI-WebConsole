@@ -1,7 +1,7 @@
 import { PageProps } from "$fresh/src/server/types.ts"
 import { useMemo, useState } from "preact/hooks"
 
-import SettingsAccount from "./settings-account.tsx"
+import SettingsAccount from "../components/misc/settings-account.tsx"
 import { SettingsTab } from "./settings-tab.tsx"
 
 const SettingsPage = () => {

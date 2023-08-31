@@ -1,9 +1,9 @@
 import IconPencil from "icons/pencil.tsx"
 import IconTrash from "icons/trash.tsx"
 
-import { Button } from "../components/ui/button/index.tsx"
-import { Table } from "../components/ui/table/index.tsx"
-import { Wrapper, WrapperProps } from "../components/ui/wrapper/index.tsx"
+import { Button } from "../ui/button/index.tsx"
+import { Table } from "../ui/table/index.tsx"
+import { Wrapper, WrapperProps } from "../ui/wrapper/index.tsx"
 
 type EndSecretTableProps = WrapperProps
 const EndSecretTable = (props: EndSecretTableProps) => {

@@ -1,4 +1,4 @@
-import ScreenIcon from "../components/icons/screen.tsx"
+import ScreenIcon from "../icons/screen.tsx"
 
 const Blocks = () => {
   return (

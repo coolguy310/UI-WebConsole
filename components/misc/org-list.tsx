@@ -1,5 +1,5 @@
-import ChevronRightFillIcon from "../components/icons/chevron-right-fill.tsx"
-import { hexToRgbA } from "../lib/utils.ts"
+import ChevronRightFillIcon from "../icons/chevron-right-fill.tsx"
+import { hexToRgbA } from "../../lib/utils.ts"
 
 // This will be from api
 const data = [

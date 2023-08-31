@@ -1,6 +1,6 @@
 import IconPencil from "icons/pencil.tsx"
 
-import { Button } from "../components/ui/button/index.tsx"
+import { Button } from "../ui/button/index.tsx"
 
 const SettingsAccount = () => {
   return (

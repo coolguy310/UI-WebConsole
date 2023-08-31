@@ -1,8 +1,8 @@
 import { PageProps } from "$fresh/src/server/types.ts"
 
 import { ConsoleLayout } from "../../components/layouts/console.tsx"
-import { OverviewStats } from "../../islands/overview-stats.tsx"
-import FunctionsTable from "../../islands/table-functions.tsx"
+import { OverviewStats } from "../../components/misc/overview-stats.tsx"
+import FunctionsTable from "../../components/misc/table-functions.tsx"
 
 export default function Console(props: PageProps) {
   return (

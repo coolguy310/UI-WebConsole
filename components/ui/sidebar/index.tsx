@@ -1,5 +1,5 @@
 import { NavigationItems } from "../../../islands/navigation-items.tsx"
-import OrganizationsList from "../../../islands/org-list.tsx"
+import OrganizationsList from "../../misc/org-list.tsx"
 import { Footer } from "../footer/index.tsx"
 
 interface SidebarProps {

@@ -7,8 +7,8 @@ import {
   Security,
   Serverless,
   Support,
-} from "../components/icons/misc.tsx"
-import Card from "./card.tsx"
+} from "../icons/misc.tsx"
+import Card from "../../islands/card.tsx"
 
 const Benefits = () => {
   const list = [
