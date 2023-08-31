@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useState } from "preact/hooks"
 
-import { AuthSocial } from '../components/common/forms/auth/social.tsx'
-import { Divider } from '../components/ui/divider/index.tsx'
-import { Kratos } from '../packages/kratos-auth/auth.ts'
-import { LoginFlow, UpdateLoginFlowBody } from '../packages/kratos-cdk/index.ts'
-import Flow from './ory-flow.tsx'
+import { Kratos } from "../packages/kratos-auth/auth.ts"
+import { LoginFlow, UpdateLoginFlowBody } from "../packages/kratos-cdk/index.ts"
+import Flow from "./ory-flow.tsx"
 
 const AuthLoginForm = () => {
   const [flowLoading, setFlowLoading] = useState(true)
@@ -21,7 +19,10 @@ const AuthLoginForm = () => {
   const onLogin = async (values: UpdateLoginFlowBody) => {
     if (!flow) return
     await Kratos.updateLoginFlow
-      .fn(flow?.id, values)
+      .fn(flow?.id, {
+        ...values,
+        method: "password",
+      })
       .then(() => {
         if (flow?.return_to) {
           window.location.href = flow?.return_to
@@ -31,6 +32,7 @@ const AuthLoginForm = () => {
       })
       .then(() => {})
       .catch((err: any) => {
+        alert(err?.body?.ui?.messages[0]?.text)
         // If the previous handler did not catch the error it's most likely a form validation error
         if (err.response?.status === 400) {
           // Yup, it is!
