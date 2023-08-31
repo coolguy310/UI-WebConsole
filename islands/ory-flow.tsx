@@ -104,6 +104,7 @@ const Flow = <T extends Values>(props: FlowProps<T>) => {
       </div>
     )
   }
+
   return (
     <form
       action={flow?.ui.action}
@@ -120,6 +121,7 @@ const Flow = <T extends Values>(props: FlowProps<T>) => {
             node={node}
             value={values?.[id] || node.attributes?.value}
             dispatchSubmit={handleSubmit}
+            submitting={isLoading}
             setValue={(value) =>
               setValues((values) => ({
                 ...values,

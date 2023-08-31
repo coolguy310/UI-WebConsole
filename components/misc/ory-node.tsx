@@ -8,9 +8,10 @@ interface Props {
   value: any
   setValue: ValueSetter
   dispatchSubmit: FormDispatcher
+  submitting?: boolean
 }
 
-const OryNode = ({ node, value, setValue, disabled, dispatchSubmit }: Props) => {
+const OryNode = ({ node, value, setValue, disabled, dispatchSubmit, submitting }: Props) => {
   if (node.type === "input") {
     return (
       <Input
@@ -21,6 +22,7 @@ const OryNode = ({ node, value, setValue, disabled, dispatchSubmit }: Props) => 
         attributes={node.attributes as any}
         dispatchSubmit={dispatchSubmit}
         icon={node.attributes?.name as "identifier" | "password"}
+        isLoading={submitting}
       />
     )
   }
