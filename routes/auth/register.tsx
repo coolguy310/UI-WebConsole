@@ -36,11 +36,11 @@ export const VectorBackground = () => {
 };
 export default function AuthLogin() {
   return (
-    <AuthLayout>
+    <>
       <VectorBackground />
       <div className="relative z-10">
         <AuthRegisterForm />
       </div>
-    </AuthLayout>
+    </>
   );
 }

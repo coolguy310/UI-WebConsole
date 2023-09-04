@@ -5,11 +5,11 @@ import { AuthLayout } from "@/components/layouts/auth.tsx";
 
 export default function AuthLogin(props: PageProps) {
   return (
-    <AuthLayout>
+    <>
       <VectorBackground />
       <div className="relative z-10">
         <AuthLoginForm />
       </div>
-    </AuthLayout>
+    </>
   );
 }
