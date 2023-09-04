@@ -1,10 +1,5 @@
-import { AuthCreateProjectForm } from "@/components/common/forms/auth/project.tsx"
-import { AuthLayout } from "@/components/layouts/auth.tsx"
+import { AuthCreateProjectForm } from "@/components/common/forms/auth/project.tsx";
 
 export default function AuthProject() {
-  return (
-    <AuthLayout>
-      <AuthCreateProjectForm />
-    </AuthLayout>
-  )
+  return <AuthCreateProjectForm />;
 }
