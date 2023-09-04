@@ -2,19 +2,22 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_app.tsx";
-import * as $1 from "./routes/_layout.tsx";
-import * as $2 from "./routes/auth/login.tsx";
-import * as $3 from "./routes/auth/org.tsx";
-import * as $4 from "./routes/auth/project.tsx";
-import * as $5 from "./routes/auth/register.tsx";
-import * as $6 from "./routes/auth/verification.tsx";
-import * as $7 from "./routes/console/functions/create.tsx";
-import * as $8 from "./routes/console/index.tsx";
-import * as $9 from "./routes/console/logs/index.tsx";
-import * as $10 from "./routes/console/secrets/index.tsx";
-import * as $11 from "./routes/console/settings/index.tsx";
-import * as $12 from "./routes/index.tsx";
+import * as $0 from "./routes/_404.tsx";
+import * as $1 from "./routes/_500.tsx";
+import * as $2 from "./routes/_app.tsx";
+import * as $3 from "./routes/_layout.tsx";
+import * as $4 from "./routes/auth/_layout.tsx";
+import * as $5 from "./routes/auth/login.tsx";
+import * as $6 from "./routes/auth/org.tsx";
+import * as $7 from "./routes/auth/project.tsx";
+import * as $8 from "./routes/auth/register.tsx";
+import * as $9 from "./routes/auth/verification.tsx";
+import * as $10 from "./routes/console/functions/create.tsx";
+import * as $11 from "./routes/console/index.tsx";
+import * as $12 from "./routes/console/logs/index.tsx";
+import * as $13 from "./routes/console/secrets/index.tsx";
+import * as $14 from "./routes/console/settings/index.tsx";
+import * as $15 from "./routes/index.tsx";
 import * as $$0 from "./islands/card.tsx";
 import * as $$1 from "./islands/checkboxes.tsx";
 import * as $$2 from "./islands/deploy.tsx";
@@ -37,19 +40,22 @@ import * as $$18 from "./islands/switch.tsx";
 
 const manifest = {
   routes: {
-    "./routes/_app.tsx": $0,
-    "./routes/_layout.tsx": $1,
-    "./routes/auth/login.tsx": $2,
-    "./routes/auth/org.tsx": $3,
-    "./routes/auth/project.tsx": $4,
-    "./routes/auth/register.tsx": $5,
-    "./routes/auth/verification.tsx": $6,
-    "./routes/console/functions/create.tsx": $7,
-    "./routes/console/index.tsx": $8,
-    "./routes/console/logs/index.tsx": $9,
-    "./routes/console/secrets/index.tsx": $10,
-    "./routes/console/settings/index.tsx": $11,
-    "./routes/index.tsx": $12,
+    "./routes/_404.tsx": $0,
+    "./routes/_500.tsx": $1,
+    "./routes/_app.tsx": $2,
+    "./routes/_layout.tsx": $3,
+    "./routes/auth/_layout.tsx": $4,
+    "./routes/auth/login.tsx": $5,
+    "./routes/auth/org.tsx": $6,
+    "./routes/auth/project.tsx": $7,
+    "./routes/auth/register.tsx": $8,
+    "./routes/auth/verification.tsx": $9,
+    "./routes/console/functions/create.tsx": $10,
+    "./routes/console/index.tsx": $11,
+    "./routes/console/logs/index.tsx": $12,
+    "./routes/console/secrets/index.tsx": $13,
+    "./routes/console/settings/index.tsx": $14,
+    "./routes/index.tsx": $15,
   },
   islands: {
     "./islands/card.tsx": $$0,
