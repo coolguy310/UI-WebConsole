@@ -1,6 +1,6 @@
 import { PageProps } from "$fresh/server.ts";
 import AuthVerificationForm from "@/islands/form-auth-verification.tsx";
-import { VectorBackground } from "@/routes/auth/register.tsx";
+import { VectorBackground } from "./(_components)/vector-background.tsx";
 
 export default function AuthVerification(props: PageProps) {
   return (
