@@ -3,6 +3,7 @@ import { Handlers } from "$fresh/server.ts";
 import { SittingWomanIlustration } from "@/components/icons/index.ts";
 import SittingManIlustration from "@/components/icons/sitting-man.tsx";
 import AuthRegisterForm from "@/islands/form-auth-register.tsx";
+import { AuthLayout } from "@/components/layouts/auth.tsx";
 
 // import { Kratos } from "../../packages/kratos-auth/auth.ts"
 
@@ -35,11 +36,11 @@ export const VectorBackground = () => {
 };
 export default function AuthLogin() {
   return (
-    <>
+    <AuthLayout>
       <VectorBackground />
       <div className="relative z-10">
         <AuthRegisterForm />
       </div>
-    </>
+    </AuthLayout>
   );
 }
