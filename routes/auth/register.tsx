@@ -1,24 +1,17 @@
-import { Handlers } from "$fresh/server.ts";
 import AuthRegisterForm from "@/islands/form-auth-register.tsx";
-import { VectorBackground } from "./(_components)/vector-background.tsx";
-
-// import { Kratos } from "../../packages/kratos-auth/auth.ts"
-
-export const handler: Handlers = {
-  async GET(_req, ctx) {
-    const resp = await ctx.render();
-    // const getFlow = await Kratos.createBrowserRegistrationFlow.fn()
-    // console.log(getFlow)
-    return resp;
-  },
-};
 
 export default function AuthLogin() {
   return (
     <>
-      <VectorBackground />
-      <div className="relative z-10">
-        <AuthRegisterForm />
+      <h1 className="text-2xl font-bold text-center">Create Account</h1>
+      <AuthRegisterForm />
+      <div className="text-center text-stroke text-sm">
+        <div className="mt-3">
+          <span>Already have an account? </span>
+          <a href="/auth/login" className="font-semibold text-accent">
+            Login
+          </a>
+        </div>
       </div>
     </>
   );
