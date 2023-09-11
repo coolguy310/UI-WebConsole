@@ -12,4 +12,19 @@ async function fetchSession(cookie: string) {
   return sessionResp;
 }
 
-export { fetchSession };
+async function logoutUser(cookie: string) {
+  const sessionResp = await fetch(
+    `${Config.auth.publicURL}/auth/sessions/logout`,
+    {
+      credentials: "include",
+      headers: {
+        accept: "application/json",
+        cookie,
+      },
+    }
+  );
+
+  return sessionResp;
+}
+
+export { fetchSession, logoutUser };
