@@ -1,10 +1,6 @@
-import { AuthCreateOrganizationForm } from "@/components/common/forms/auth/org.tsx"
-import { AuthLayout } from "@/components/layouts/auth.tsx"
+import { AuthCreateOrganizationForm } from "@/components/common/forms/auth/org.tsx";
+import { AuthLayout } from "@/components/layouts/auth.tsx";
 
 export default function AuthOrganization() {
-  return (
-    <AuthLayout>
-      <AuthCreateOrganizationForm />
-    </AuthLayout>
-  )
+  return <AuthCreateOrganizationForm />;
 }

@@ -1,10 +1,9 @@
-import { LayoutProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
+import Header from "@/islands/header.tsx";
+import Footer from "@/components/misc/footer.tsx";
+import { defineLayout } from "$fresh/src/server/defines.ts";
 
-import Footer from "../components/misc/footer.tsx";
-import Header from "../islands/header.tsx";
-
-export default function LandingPageLayout({ Component }: LayoutProps) {
+export default defineLayout((_, ctx) => {
   return (
     <>
       <Head>
@@ -13,10 +12,10 @@ export default function LandingPageLayout({ Component }: LayoutProps) {
       <div class="bg-primary-black text-white min-h-screen">
         <Header />
         <div className="container px-6 lg:px-28 mx-auto pt-24">
-          <Component />
+          <ctx.Component />
         </div>
         <Footer />
       </div>
     </>
   );
-}
+});
