@@ -24,4 +24,4 @@ USER deno
 RUN deno run -A dev.ts build
 
 EXPOSE 8000
-CMD ["run", "--cached-only", "--allow-env=ESBUILD_BINARY_PATH,XDG_CACHE_HOME,HOME,DENO_REGION,DENO_DEPLOYMENT_ID,PORT,HOSTNAME", "--allow-read=/app", "--allow-net=0.0.0.0", "main.ts"]
+CMD ["run", "--cached-only", "--allow-env=ESBUILD_BINARY_PATH,XDG_CACHE_HOME,HOME,DENO_REGION,DENO_DEPLOYMENT_ID,PORT,HOSTNAME", "--allow-read=/app", "--allow-net=0.0.0.0,kratos.qernal-bld.dev,chaos.qernal-bld.dev", "main.ts"]

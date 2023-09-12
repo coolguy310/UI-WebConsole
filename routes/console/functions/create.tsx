@@ -1,4 +1,4 @@
-import { PageProps } from "$fresh/src/server/types.ts"
+import { PageProps } from "$fresh/src/server/types.ts";
 
 import {
   FunctionBlocksForm,
@@ -7,14 +7,13 @@ import {
   FunctionDetailForm,
   FunctionRoutesForm,
   FunctionScalingForm,
-} from "../../../components/common/forms/function/index.ts"
-import RocketIcon from "../../../components/icons/rocket.tsx"
-import { ConsoleLayout } from "../../../components/layouts/console.tsx"
-import { Button } from "../../../components/ui/button/index.tsx"
+} from "../../../components/common/forms/function/index.ts";
+import RocketIcon from "../../../components/icons/rocket.tsx";
+import { Button } from "../../../components/ui/button/index.tsx";
 
 export default function Console(props: PageProps) {
   return (
-    <ConsoleLayout location={props.url}>
+    <>
       <h1 className="text-xl font-semibold mb-5">Create Functions</h1>
       <div className="flex flex-col space-y-5">
         <div className="grid grid-cols-2 gap-5">
@@ -32,6 +31,6 @@ export default function Console(props: PageProps) {
         <RocketIcon />
         <span>Deploy</span>
       </Button>
-    </ConsoleLayout>
-  )
+    </>
+  );
 }
