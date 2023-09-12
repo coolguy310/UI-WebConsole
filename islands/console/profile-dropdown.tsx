@@ -53,14 +53,12 @@ const ProfileDropdown = () => {
           >
             Profile
           </a>
-          <form method="post" action={"/api/logout"}>
-            <button
-              type="submit"
-              className="w-full text-left py-2.5 px-5 hover:bg-[#3F3F41] text-sm rounded-lg"
-            >
-              Logout
-            </button>
-          </form>
+          <a
+            href="/auth/logout"
+            className="w-full text-left py-2.5 px-5 hover:bg-[#3F3F41] text-sm rounded-lg"
+          >
+            Logout
+          </a>
         </div>
       )}
     </div>
