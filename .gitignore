@@ -4,3 +4,4 @@ node_modules
 .env
 Deno.env
 _fresh
+.cert
